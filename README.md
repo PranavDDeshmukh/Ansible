@@ -49,5 +49,5 @@ ansible all -m ping
 ````
 ansible-playbook nginx.yaml
 ````
-${\color {red} {Installation  Steps  For  Ubuntu:}$
+${\color {red} {Installation  Steps  For  Ubuntu:}}$
 
