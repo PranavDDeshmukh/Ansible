@@ -1,6 +1,6 @@
 # Ansible
 ${\color {red} {Installation  Steps  For  AmazonLinux:}}$
-** Launch one Master instance & 2 or more Node instance
+**Launch one Master instance & 2 or more Node instance
 ````
 sudo yum update
 ````
