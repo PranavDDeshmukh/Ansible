@@ -1,2 +1,2 @@
 # Ansible
-${\color {red} {Installation_Steps_For_Amazon_Linux:}}$
+${\color {red} {Installation  Steps  For  AmazonLinux:}}$
