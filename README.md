@@ -50,4 +50,58 @@ ansible all -m ping
 ansible-playbook nginx.yaml
 ````
 ${\color {red} {Installation  Steps  For  Ubuntu:}}$
+## Installation
+````
+sudo apt-add-repository ppa:ansible/ansible
+````
+````
+sudo apt update
+````
+````
+sudo apt install ansible
+````
+````
+ansible --version
+````
+### set up inventory file
+````
+sudo nano /etc/ansible/hosts
+private-ip of instance
+````
+### edit ansible.cfg
+````
+[defaults]
+inventory = hosts
+host_key_checking = False
+````
+### ping all nodes to test connection
+````
+ansible all -m ping
+````
+### Playbook_File
+- name: update and install and nginx
+  hosts: all
+  become: true
 
+  tasks:
+   
+  - name: Upgrade all packages
+    apt:
+     name: '*'
+     state: latest
+      
+  - name: Install the latest version of nginx
+    apt:
+     name: nginx
+     state: latest
+      
+  - name: Start nginx
+    service:
+     name:  nginx
+     state: started
+     enabled: true
+
+  ## run playbook
+  ````
+  ansible-playbook playbook.yaml
+  ````
