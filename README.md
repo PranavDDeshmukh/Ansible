@@ -1,2 +1,2 @@
 # Ansible
-$${ \color \text bf {Installation Steps For Amazon Linux:}}$$
+$${\color \textbf {Installation Steps For Amazon Linux:}}$$
