@@ -3,6 +3,21 @@
 
 Ansible is an open-source IT automation tool. It helps you automate repetitive tasks like configuring servers, deploying applications, and managing IT infrastructure. It uses simple, human-readable instructions (called playbooks written in YAML) to define what tasks should be done.
 
+## Example of a Simple Task in Ansible
+
+Task: Install Apache on a web server
+Ansible Playbook (YAML file):
+````
+- name: Install Apache Web Server
+  hosts: webservers
+  tasks:
+    - name: Install Apache
+      apt:
+        name: apache2
+        state: present
+
+````
+
 ${\color {red} {Installation  Steps  For  AmazonLinux:}}$
 ### Launch one Master instance & 2 or more Node instance
 ````
