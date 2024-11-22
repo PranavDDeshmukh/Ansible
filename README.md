@@ -1,4 +1,7 @@
 # Ansible
+What is Ansible?
+Ansible is an open-source IT automation tool. It helps you automate repetitive tasks like configuring servers, deploying applications, and managing IT infrastructure. It uses simple, human-readable instructions (called playbooks written in YAML) to define what tasks should be done.
+
 ${\color {red} {Installation  Steps  For  AmazonLinux:}}$
 ### Launch one Master instance & 2 or more Node instance
 ````
